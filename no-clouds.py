@@ -8,7 +8,7 @@ import json
 from PIL import Image
  
 
-def getTiles(location, satN, start, finish, p, r, lon, lat, tile_path):
+def get_tiles(location, satN, start, finish, p, r, lon, lat, tile_path):
     if not os.path.exists(tile_path):
         os.mkdir(tile_path)
     if lat=="0" and lon=="0":
@@ -18,7 +18,7 @@ def getTiles(location, satN, start, finish, p, r, lon, lat, tile_path):
 
 
 
-def combineTiles(tile_path, satN):
+def combine_tiles(tile_path, satN):
     #paths = glob.glob("**/**/*.txt")
     paths = glob.glob(tile_path+"/**/*.txt")
 
@@ -126,8 +126,8 @@ if __name__ == "__main__":
         print(location)
         folder=os.getcwd()+"/"
         tile_path=folder+location
-        getTiles(location, mydict['satN'], mydict['start'], mydict['finish'], d['path'], d['row'], d['lon'], d['lat'], tile_path)
-        combineTiles(tile_path, mydict['satN'])
+        get_tiles(location, mydict['satN'], mydict['start'], mydict['finish'], d['path'], d['row'], d['lon'], d['lat'], tile_path)
+        combine_tiles(tile_path, mydict['satN'])
         for image_file in glob.iglob(tile_path+'-stack/*.tif'):
             color_correct(image_file, mydict['satN'], folder)
             crop_image(image_file, location, folder)

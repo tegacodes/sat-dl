@@ -23,8 +23,8 @@ pip install -r requirements.txt
 	* landsat 5 Launch date: 1 March 1984, Deactivated: 5 June 2013
 	* landsat 7: Launch date: April 15, 1999
 	* landsat 8: Launch date: February 11, 2013
-* Script downloads all bands of sat data. Bands are combined in combineTiles function in the order defined in stack.sh file. Note that landsat 5,7 and 8 all have different band orders. Adjust stack.sh if you want to combine different bands. RGB for Landsat 8 are bands 4, 3, and 2 which will produce a true color image.
-* Script also does a crude color correction in the function color_correct(). This could be much better. 
+* Script downloads all bands of sat data. Bands are combined in combine_tile function in the order defined in stack.sh file. Note that landsat 5,7 and 8 all have different band orders. Adjust stack.sh if you want to combine different bands. RGB for Landsat 8 are bands 4, 3, and 2 which will produce a true color image.
+* Script also does a crude color correction in the function color_correct(). This could be improved! 
 
 For more on Landsat 8 bands, see the ever brilliant Charlie Lloyd's guides:
 * [Putting Landsat 8’s Bands to Work](https://blog.mapbox.com/putting-landsat-8s-bands-to-work-631c4029e9d1)
