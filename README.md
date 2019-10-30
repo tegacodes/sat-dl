@@ -1,16 +1,18 @@
 # Download Landsat Images
 
 ## Installation
-1. Clone the repo
+1. Install landsat-util: [https://pythonhosted.org/landsat-util/installation.html](https://pythonhosted.org/landsat-util/installation.html)
 
-2. Create a virtualenvironment
+2. Clone this repo
+
+3. Create a virtualenvironment
 
 ```
 virtualenv env
 source env/bin/activate
 ```
 
-3. Install requirements
+4. Install requirements
 
 ```
 pip install -r requirements.txt
