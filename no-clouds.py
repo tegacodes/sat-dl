@@ -4,6 +4,7 @@ import sys
 import rasterio
 import subprocess
 import shutil
+import json
 from PIL import Image
  
 
@@ -114,25 +115,9 @@ def crop_image(file,location, folder):
 
 
 if __name__ == "__main__":
-    #landsat 5 Launch date: 1 March 1984, Deactivated: 5 June 2013
-    #landsat 7: Launch date: April 15, 1999
-    #landsat 8: Launch date: February 11, 2013
 
-
-
-    mydict = {
-        "start":"2019-04-01",
-        "finish":"2019-10-01", # finish date
-        "satN":"8", # land sat number
-        "cases": [ {
-            "name":"Dubai",
-            "path":"160", 
-            "row":"43", 
-            "lat":"0",   
-            "lon":"0"
-            }
-            ]
-        }
+    with open("data.json", "r") as read_file:
+        mydict = json.load(read_file)
 
     #print(mydict['cases'][1]['name'])
 
