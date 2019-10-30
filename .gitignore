@@ -1,0 +1,27 @@
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# Graphics Interchange Format
+*.gif
+
+# RAW
+*.raw
+
+# Portable Network Graphics
+*.png
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
