@@ -9,13 +9,12 @@ from PIL import Image
  
 
 def get_tiles(location, satN, start, finish, p, r, lon, lat, tile_path):
-    if not os.path.exists(tile_path):
-        os.mkdir(tile_path)
     if lat=="0" and lon=="0":
         subprocess.call("landsat -sat "+satN+" --start "+start+" --end "+finish+" --path "+p+" --row "+r+" -o "+tile_path+" --max-cloud-percent 5", shell=True)
     if p=="0" and r=="0":
         subprocess.call("landsat -sat "+satN+" --start "+start+" --end "+finish+" --lat "+lat+" --lon "+lon+" -o "+tile_path+" --max-cloud-percent 5", shell=True)
-
+    if not os.path.exists(tile_path):
+        os.mkdir(tile_path)
 
 
 def combine_tiles(tile_path, satN):

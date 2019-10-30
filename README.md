@@ -8,14 +8,14 @@
 3. Create a virtualenvironment
 
 ```
-virtualenv env
+python3 -m venv env
 source env/bin/activate
 ```
 
 4. Install requirements
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Usage
