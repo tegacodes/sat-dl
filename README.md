@@ -1,7 +1,7 @@
 # Download Landsat Images
 
 ## Installation
-1. Install landsat-util: [https://pythonhosted.org/landsat-util/installation.html](https://pythonhosted.org/landsat-util/installation.html)
+1. Install landsat-util: [https://github.com/dgketchum/Landsat578](https://github.com/dgketchum/Landsat578)
 
 2. Clone this repo
 
@@ -15,7 +15,7 @@ source env/bin/activate
 4. Install requirements
 
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
