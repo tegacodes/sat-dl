@@ -26,8 +26,13 @@ pip install -r requirements.txt
 	* landsat 7: Launch date: April 15, 1999
 	* landsat 8: Launch date: February 11, 2013
 * Cloudy tiles are discarded.
-* Script downloads all bands of sat data. Bands are combined in combine_tile function in the order defined in stack.sh file. Note that landsat 5,7 and 8 all have different band orders. Adjust stack.sh if you want to combine different bands. RGB for Landsat 8 are bands 4, 3, and 2 which will produce a true color image.
-* Script also does a crude color correction in the function color_correct(). This could be improved! 
+* Script has four functions: get_tiles, combine_tiles, color_correct and crop_image 
+	* get_tiles downloads all bands of sat data. Bands are combined in combine_tiles function in the order defined in stack.sh file. Note that landsat 5,7 and 8 all have different band orders. Adjust stack.sh if you want to combine different bands. RGB for Landsat 8 are bands 4, 3, and 2 which will produce a true color image.
+	* A crude color correction is done in the function color_correct(). This could be improved! 
+	* crop_image makes jpg thumb of the real color image
+	
+##Troubleshooting
+* if your folder path has a space in it, the python script will fail. (Run pwd in the terminal to see if your path has this problem. Rename directories without a space and set up the virtual envr again to fix.) 
 
 For more on Landsat 8 bands, see these guides by the ever brilliant Charlie Lloyd:
 * [Putting Landsat 8’s Bands to Work](https://blog.mapbox.com/putting-landsat-8s-bands-to-work-631c4029e9d1)
