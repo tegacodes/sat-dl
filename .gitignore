@@ -25,3 +25,6 @@
 
 # Portable Document Format
 *.pdf
+
+env/
+venv/

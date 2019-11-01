@@ -16,7 +16,6 @@ def get_tiles(location, satN, start, finish, p, r, lon, lat, tile_path):
     if not os.path.exists(tile_path):
         os.mkdir(tile_path)
 
-
 def combine_tiles(tile_path, satN):
     #paths = glob.glob("**/**/*.txt")
     paths = glob.glob(tile_path+"/**/*.txt")
@@ -123,8 +122,7 @@ if __name__ == "__main__":
     for d in mydict['cases']:
         location = d["name"]
         print(location)
-        folder=os.getcwd()+"/"
-        tile_path=folder+location
+        tile_path = location
         get_tiles(location, mydict['satN'], mydict['start'], mydict['finish'], d['path'], d['row'], d['lon'], d['lat'], tile_path)
         combine_tiles(tile_path, mydict['satN'])
         for image_file in glob.iglob(tile_path+'-stack/*.tif'):

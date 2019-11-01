@@ -32,7 +32,7 @@ pip install -r requirements.txt
 	* crop_image makes jpg thumb of the real color image
 	
 ##Troubleshooting
-* if your folder path has a space in it, the python script will fail. (Run pwd in the terminal to see if your path has this problem. Rename directories without a space and set up the virtual envr again to fix.) 
+* if your folder path has a space in it, the python script may fail. (Run pwd in the terminal to see if your path has this problem. Rename directories without a space and set up the virtual envr again to fix.) 
 
 For more on Landsat 8 bands, see these guides by the ever brilliant Charlie Lloyd:
 * [Putting Landsat 8’s Bands to Work](https://blog.mapbox.com/putting-landsat-8s-bands-to-work-631c4029e9d1)
