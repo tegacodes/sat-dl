@@ -1,9 +1,9 @@
 # Download Landsat Images
 
-## Installation
-1. Install landsat-util: [https://github.com/dgketchum/Landsat578](https://github.com/dgketchum/Landsat578)
+This uses the landsat578 tool: [https://github.com/dgketchum/Landsat578](https://github.com/dgketchum/Landsat578)
 
-2. Clone this repo
+## Installation
+1. Clone this repo
 
 3. Create a virtualenvironment
 
