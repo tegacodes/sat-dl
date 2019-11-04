@@ -31,7 +31,7 @@ pip install -r requirements.txt
 	* A crude color correction is done in the function color_correct(). This could be improved! 
 	* crop_image makes jpg thumb of the real color image
 	
-##Troubleshooting
+## Troubleshooting
 * if your folder path has a space in it, the python script may fail. (Run pwd in the terminal to see if your path has this problem. Rename directories without a space and set up the virtual envr again to fix.) 
 
 For more on Landsat 8 bands, see these guides by the ever brilliant Charlie Lloyd:
