@@ -33,7 +33,7 @@ pyarrow==0.13.0
 pyparsing==2.4.0
 python-dateutil==2.8.0
 pytz==2019.1
-PyYAML==5.1
+PyYAML==5.4
 rasterio==1.0.22
 requests==2.21.0
 rio-color==1.0.0
