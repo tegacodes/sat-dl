@@ -19,7 +19,7 @@ jmespath==0.9.4
 Landsat578==0.5.1
 llvmlite==0.28.0
 locket==0.2.0
-lxml==4.3.3
+lxml==4.6.3
 mercantile==1.0.4
 msgpack==0.6.1
 numba==0.43.1
