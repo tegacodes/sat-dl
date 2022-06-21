@@ -24,7 +24,7 @@ mercantile==1.0.4
 msgpack==0.6.1
 numba==0.43.1
 numexpr==2.6.9
-numpy==1.16.3
+numpy==1.22.0
 pandas==0.24.2
 partd==0.3.10
 Pillow==6.0.0
